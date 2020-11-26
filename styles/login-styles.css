@@ -10,7 +10,7 @@
 section {
     position: relative;
     min-height: 100vh;
-    background-color: #f8dd30;
+    background-color: rgba(33, 34, 63, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ section .container .user .imgBx {
     position: relative;
     width: 50%;
     height: 90%;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     transition: 0.5s;
 }
 
