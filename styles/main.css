@@ -1,0 +1,162 @@
+/*
+  Posts carousel
+*/
+
+
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.menu {
+  background: rgba(33, 34, 63, 0.95);
+}
+
+.parallax {
+  color: white;
+
+  /* The image used */
+  background-image: url("../img/nu.png");
+  width: 100%;
+  overflow: hidden;
+
+  /* Set a specific height */
+  min-height: 150px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: -2;
+}
+
+.achivement {
+  background: rgba(33, 34, 63, 0.95);;
+}
+
+/*
+ * Footer
+ */
+
+.footer {
+  text-decoration: none;
+  padding: 2.5rem 0 1rem 0;
+
+  color: white;
+  text-align: center;
+  background-color: rgba(33, 34, 63, 0.95);
+  border-top: .05rem solid #e5e5e5;
+}
+.footer p:last-child {
+   margin-bottom: 0;
+}
+
+.footer i {
+  padding:1.5rem;
+  font-size: 40px;
+}
+
+footer a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer hr {
+  border-color: white;
+}
+
+
+/*
+    Blog
+*/
+
+.post-container p{
+  height: 72px;
+  overflow: hidden;
+}
+
+.post-container a:hover{
+  color: #007bff;
+}
+
+/*
+    Media requests
+*/
+
+@media (min-width: 576px) {
+  /* CSS для: 576px <= ширины <= 767px */
+  .card-list-item {
+        flex-basis: 100%;
+    }
+    .frame {
+        height: 500px;
+    }
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 992px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1200px) {
+  /* CSS для: ширины >= 1200px */
+}
