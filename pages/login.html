@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <link rel="stylesheet" href="../styles/login-styles.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-</head>
-<body>
-<section>
-    <div class="container">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <link rel="stylesheet" href="../styles/login-styles.css" />
+    <link rel="stylesheet" href="../styles/bootstrap.css" />
+    <script src="../scripts/logInJs.js" defer></script>
+    <script src="../scripts/connectlogin.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
         <div class="user signinBx">
-
-            <div class="imgBx"><span class="helper"></span><img src="../img/NU logo.png" alt="" /></div>
-            <div class="formBx">
-                <form action="" onsubmit="return false;">
-                    <h2>Войти</h2>
-                    <input type="text" name="" placeholder="Имя пользователя" />
-                    <input type="password" name="" placeholder="Пароль" />
-                    <input type="submit" name="" value="Войти" />
-                    <p class="signup">
-                        Нету аккаунта ?
-                        <a href="#" onclick="toggleForm();">Зарегистрироваться</a>
-                    </p>
-                </form>
-            </div>
+          <div class="imgBx">
+            <span class="helper"></span><img src="../img/NU logo.png" alt="" />
+          </div>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Войти</h2>
+              <input
+                id="signinUsername"
+                type="text"
+                name=""
+                placeholder="Имя пользователя"
+              />
+              <input
+                id="signinPassword"
+                type="password"
+                name=""
+                placeholder="Пароль"
+              />
+              <input id="signinButton" type="submit" name="" value="Войти" />
+              <p class="signup">
+                Нету аккаунта ?
+                <a href="#" onclick="toggleForm();">Зарегистрироваться</a>
+              </p>
+            </form>
+          </div>
         </div>
         <div class="user signupBx">
-            <div class="formBx">
-                <form action="" onsubmit="return false;">
-                    <h2>Создать Аккаунт</h2>
-                    <input type="text" name="" placeholder="Имя пользователя" />
-                    <input type="email" name="" placeholder="Адрес электронной почты" />
-                    <input type="password" name="" placeholder="Придумайте пароль" />
-                    <input type="password" name="" placeholder="Повторите пароль" />
-                    <input type="submit" name="" value="Регистрация" />
-                    <p class="signup">
-                        Уже есть аккаунт ?
-                        <a href="#" onclick="toggleForm();">Войти.</a>
-                    </p>
-                </form>
-            </div>
+          <div class="formBx">
+            <form action="" onsubmit="return false;">
+              <h2>Создать Аккаунт</h2>
+              <input
+                id="signupUsername"
+                type="text"
+                name=""
+                placeholder="Имя пользователя"
+              />
+              <input
+                id="signupEmail"
+                type="email"
+                name=""
+                placeholder="Адрес электронной почты"
+              />
+              <input
+                id="signupPassword"
+                type="password"
+                name=""
+                placeholder="Придумайте пароль"
+              />
+              <input
+                id="signupPassword2"
+                type="password"
+                name=""
+                placeholder="Повторите пароль"
+              />
+              <input
+                id="signupButton"
+                type="submit"
+                name=""
+                value="Регистрация"
+              />
+              <p class="signup">
+                Уже есть аккаунт ?
+                <a href="#" onclick="toggleForm();">Войти.</a>
+              </p>
+            </form>
+          </div>
 
-            <div class="imgBx"><span class="helper"></span><img src="../img/NU logo.png" alt="" /></div>
+          <div class="imgBx">
+            <span class="helper"></span><img src="../img/NU logo.png" alt="" />
+          </div>
         </div>
-    </div>
-</section>
-</body>
-<script src="../scripts/logInJs.js"></script>
+      </div>
+    </section>
+  </body>
 </html>
