@@ -10,6 +10,7 @@
     />
     <meta name="generator" content="Jekyll v4.1.1" />
     <link rel="stylesheet" href="../styles/login-styles.css" />
+    <link rel="stylesheet" href="../styles/bootstrap.css" />
     <script src="../scripts/logInJs.js" defer></script>
     <script src="../scripts/connectlogin.js" defer></script>
   </head>
@@ -18,28 +19,27 @@
       <div class="container">
         <div class="user signinBx">
           <div class="imgBx">
-            <span class="helper"></span
-            ><img src="../img/NuBuilding.jpg" alt="" />
+            <span class="helper"></span><img src="../img/NU logo.png" alt="" />
           </div>
           <div class="formBx">
             <form action="" onsubmit="return false;">
-              <h2>Sign In</h2>
+              <h2>Войти</h2>
               <input
                 id="signinUsername"
                 type="text"
                 name=""
-                placeholder="Username"
+                placeholder="Имя пользователя"
               />
               <input
                 id="signinPassword"
                 type="password"
                 name=""
-                placeholder="Password"
+                placeholder="Пароль"
               />
-              <input id="signinButton" type="submit" name="" value="Login" />
+              <input id="signinButton" type="submit" name="" value="Войти" />
               <p class="signup">
-                Don't have an account ?
-                <a href="#" onclick="toggleForm();">Sign Up.</a>
+                Нету аккаунта ?
+                <a href="#" onclick="toggleForm();">Зарегистрироваться</a>
               </p>
             </form>
           </div>
@@ -47,35 +47,40 @@
         <div class="user signupBx">
           <div class="formBx">
             <form action="" onsubmit="return false;">
-              <h2>Create an account</h2>
+              <h2>Создать Аккаунт</h2>
               <input
                 id="signupUsername"
                 type="text"
                 name=""
-                placeholder="Username"
+                placeholder="Имя пользователя"
               />
               <input
                 id="signupEmail"
                 type="email"
                 name=""
-                placeholder="Email Address"
+                placeholder="Адрес электронной почты"
               />
               <input
                 id="signupPassword"
                 type="password"
                 name=""
-                placeholder="Create Password"
+                placeholder="Придумайте пароль"
               />
               <input
                 id="signupPassword2"
                 type="password"
                 name=""
-                placeholder="Confirm Password"
+                placeholder="Повторите пароль"
               />
-              <input id="signupButton" type="submit" name="" value="Sign Up" />
+              <input
+                id="signupButton"
+                type="submit"
+                name=""
+                value="Регистрация"
+              />
               <p class="signup">
-                Already have an account ?
-                <a href="#" onclick="toggleForm();">Sign in.</a>
+                Уже есть аккаунт ?
+                <a href="#" onclick="toggleForm();">Войти.</a>
               </p>
             </form>
           </div>
