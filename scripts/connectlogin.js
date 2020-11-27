@@ -74,6 +74,7 @@ async function signinConnect(user) {
   let result = await response.json();
   console.log(result);
   if (result.ok) {
+    alert(result.message);
     document.cookie = "token=" + result.message;
     window.location.href = "../index.html";
   } else {
