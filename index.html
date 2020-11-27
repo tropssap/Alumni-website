@@ -61,7 +61,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="scripts/logins.js"></script>
+    <script src="scripts/logins.js" defer></script>
   </head>
 
   <body>
@@ -71,9 +71,25 @@
           <div class="col-4 text-center">
             <a class="blog-header-logo text-dark" href="#">Alumni </a>
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="btn btn-sm btn-outline-secondary mx-2" href="#">Войти</a>
-            <a class="btn btn-sm btn-outline-secondary mx-2" href="#"
+          <div
+            id="logged"
+            class="col-4 d-flex justify-content-end align-items-center"
+          >
+            <a
+              id="logOffDiv"
+              class="btn btn-sm btn-outline-secondary mx-2"
+              style="display:none;"
+              href="#"
+              >Выйти</a
+            >
+            <a
+              class="btn btn-sm btn-outline-secondary mx-2"
+              href="/pages/login.html"
+              >Войти</a
+            >
+            <a
+              class="btn btn-sm btn-outline-secondary mx-2"
+              href="/pages/login.html"
               >Зарегистрироваться</a
             >
           </div>
