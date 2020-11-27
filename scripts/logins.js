@@ -2,7 +2,6 @@ async function signupConnect() {
   let response = await fetch("http://plony.hopto.org:70/authorize", {
     headers: { Authorization: document.cookie.replace("token=", "") },
     method: "GET",
-    body: JSON.stringify(document.cookie),
   });
   let result = await response.json();
   if (result.ok) {
@@ -11,7 +10,7 @@ async function signupConnect() {
     //loggedOff();
   }
 }
-
+signupConnect();
 const logOffDiv = document.getElementById("logOffDiv");
 function loggedIn() {
   loggedDiv = document.getElementById("logged");
