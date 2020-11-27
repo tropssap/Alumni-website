@@ -1,0 +1,63 @@
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: black;
+}
+
+.card{
+    margin-right: 33px;
+    border-radius: 0;
+}
+
+.badge-news {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.overlay .mask {
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mask:hover{
+    opacity: 1;
+}
+
+.waves-effect{
+    overflow: hidden;
+}
+
+.page-item.active .page-link{
+    border-radius: 50px;
+}
+
+.page-item .page-link{
+    border-radius: 50px;
+}

@@ -15,7 +15,6 @@ body { background: #e8e8e8; }
 	height: 100%;
 	font-size: 16px;
 	display: flex;
-	flex-wrap: nowrap;
 	align-content: center;
 }
 .card-list-item {
@@ -27,14 +26,13 @@ body { background: #e8e8e8; }
 	padding: 0;
 	cursor: pointer;
 	transition: all .2s linear;
-	flex-basis: 25%;
+	width: 30%;
 	flex-shrink: 0;
-
 }
 
 /* Frame */
 .frame {
-	height: 500px;
+	height: auto;
 	width: 100%;
 	overflow: hidden;
 	touch-action: manipulation;
@@ -45,4 +43,11 @@ body { background: #e8e8e8; }
 }
 .frame .card-list .card-list-item:hover {
 	box-shadow: 0px 0px 20px -7px;
+}
+@media (max-width: 768px) {
+	/* CSS для: 768px <= ширины <= 991px */
+	.card-list-item {
+		width: auto;
+		max-width: 80vw;
+	}
 }
