@@ -6,3 +6,8 @@ a{
 a:hover{
     color: black;
 }
+
+.card{
+    margin-right: 33px;
+    border-radius: 0;
+}
