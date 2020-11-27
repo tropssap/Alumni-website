@@ -1,17 +1,17 @@
-async function signupConnect() {
+async function signConnect() {
   let response = await fetch("http://plony.hopto.org:70/authorize", {
     headers: { Authorization: document.cookie.replace("token=", "") },
     method: "GET",
-    body: JSON.stringify(document.cookie),
   });
   let result = await response.json();
+  console.log(result);
   if (result.ok) {
     loggedIn();
   } else {
     //loggedOff();
   }
 }
-
+signConnect();
 const logOffDiv = document.getElementById("logOffDiv");
 function loggedIn() {
   loggedDiv = document.getElementById("logged");
