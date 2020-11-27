@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <link href="../styles/bootstrap.css" rel="stylesheet" />
+    <title>Блог</title>
+</head>
+<body>
+<div class="container">
+    <form>
+        <p class="lead mt-2">
+            Информация об авторе
+        </p>
+        <div class="input-group input-group mb-3">
+            <input type="text" class="form-control" id="authorName" placeholder="Имя пользователя" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Имя и фамилия</span>
+            </div>
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+        </div>
+
+        <p class="lead mt-2">
+            Редактирование блога
+        </p>
+        <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Заголовок">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="button">Загрузить</button>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="chooseImg">
+                <label class="custom-file-label" for="chooseImg">Выберите превью</label>
+            </div>
+        </div>
+        <div class="input-group input-group mb-3">
+            <textarea class="form-control" id="blogMainText" placeholder="Текст блога" aria-label="With textarea" rows="10"></textarea>
+        </div>
+        <button class="btn btn-primary mb-2">Опубликовать</button>
+
+    </form>
+</div>
+</body>
+</html>
