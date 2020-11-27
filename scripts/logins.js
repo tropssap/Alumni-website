@@ -1,4 +1,5 @@
 async function signConnect() {
+    console.log(document.cookie.replace("token=", ""));
   let response = await fetch("http://plony.hopto.org:70/authorize", {
     headers: { "Authorization": "Bearer" + document.cookie.replace("token=", "") },
     method: "GET",
