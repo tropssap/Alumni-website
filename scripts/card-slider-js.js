@@ -1,4 +1,4 @@
-var x = window.matchMedia("(min-width: 576px)")
+var x = window.matchMedia("(max-width: 576px)")
 
 let navType = 'centered';
 let midActive = 1;
@@ -39,7 +39,7 @@ window.addEventListener("resize", resizer);
 function resizer() {
     setTimeout(function () {
         frame.reload()
-    }, 200)
+    }, 300)
 }
 window.addEventListener('load', (event) => {
     frame.reload()
