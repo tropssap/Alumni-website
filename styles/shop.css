@@ -53,3 +53,11 @@ a:hover{
 .waves-effect{
     overflow: hidden;
 }
+
+.page-item.active .page-link{
+    border-radius: 50px;
+}
+
+.page-item .page-link{
+    border-radius: 50px;
+}
