@@ -57,8 +57,9 @@ async function signupConnect(user) {
   if (result.ok) {
     alert("Регистрация успешна");
     location.reload();
-  }else{
-    alert("Пользователь с таким логином или почтой уже существует")   }
+  } else {
+    alert("Пользователь с таким логином или почтой уже существует");
+  }
 }
 
 async function signinConnect(user) {
@@ -72,4 +73,10 @@ async function signinConnect(user) {
   });
   let result = await response.json();
   console.log(result);
+  if (result.ok) {
+    document.cookie = "token=" + result.message;
+    window.location.href = "../index.html";
+  } else {
+    alert("Неверный логин или пароль");
+  }
 }
