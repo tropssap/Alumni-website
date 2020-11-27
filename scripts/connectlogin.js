@@ -74,7 +74,9 @@ async function signinConnect(user) {
   let result = await response.json();
   console.log(result);
   if (result.ok) {
-    document.cookie = "token=" + result.message;
+    alert(result.message);
+    document.cookie =
+      "token=" + result.message + "domain=http://plony.hopto.org:70/";
     window.location.href = "../index.html";
   } else {
     alert("Неверный логин или пароль");
