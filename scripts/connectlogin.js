@@ -12,7 +12,7 @@ function signin() {
   const username = signinUsername.value;
   const password = signinPassword.value;
   const user = {
-    username: username,
+    username: username.toLowerCase(),
     password: password,
   };
   signinConnect(user);
@@ -34,7 +34,7 @@ function signup() {
   const email = signupEmail.value;
   if (password === password2) {
     const user = {
-      username: username,
+      username: username.toLowerCase(),
       password: password,
       email: email,
     };
@@ -44,21 +44,29 @@ function signup() {
   }
 }
 
-
-
 async function signupConnect(user) {
-  console.log(1);
-  let response = await fetch("http://plony.hopto.org/authorize/register", {
+  let response = await fetch("http://plony.hopto.org:70/authorize/register", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
     method: "POST",
     body: JSON.stringify(user),
   });
   let result = await response.json();
-  console.log(result);
+  if (result.ok) {
+    alert("Регистрация успешна");
+    location.reload();
+  }else{
+    alert("Пользователь с таким логином или почтой уже существует")   }
 }
 
-
 async function signinConnect(user) {
-  let response = await fetch("http://plony.hopto.org/authorize/login", {
+  let response = await fetch("http://plony.hopto.org:70/authorize/login", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
     method: "POST",
     body: JSON.stringify(user),
   });
