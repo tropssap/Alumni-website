@@ -4,6 +4,7 @@ async function signConnect() {
     method: "GET",
   });
   let result = await response;
+  console.log(result);
   if (result.ok) {
     loggedIn();
   } else {
