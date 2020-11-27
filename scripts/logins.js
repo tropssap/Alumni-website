@@ -3,7 +3,7 @@ async function signConnect() {
     headers: { Authorization: document.cookie.replace("token=", "") },
     method: "GET",
   });
-  let result = await response;
+  let result = await response.json();
   console.log(result);
   if (result.ok) {
     loggedIn();
